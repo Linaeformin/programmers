@@ -1,7 +1,8 @@
 class Solution {
     public int solution(int n) {
-        int answer = n / 7 + 1;
-        if (n % 7 == 0) answer--;
-        return answer;
+        // int answer = n / 7 + 1;
+        // if (n % 7 == 0) answer--;
+        // return answer;
+        return (n + 6) / 7;
     }
 }
