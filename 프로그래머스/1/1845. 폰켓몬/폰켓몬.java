@@ -13,9 +13,8 @@ class Solution {
         
         int take = nums.length / 2;
         
-        ArrayList<Integer> list = new ArrayList<>(map.keySet());
-        if (list.size() >= take) answer = take;
-        else answer = list.size();
+        if (map.size() >= take) answer = take;
+        else answer = map.size();
         
         return answer;
     }
