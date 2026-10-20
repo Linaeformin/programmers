@@ -12,11 +12,9 @@ class Solution {
     
         int currentId = 0;  // 올라오는 선수의 원래 순위
         int targetId = 0;   // 추격된 선수의 순위
-        int tmp = 0;
         
         for (int i = 0; i <callings.length; i++){
             currentId = map.get(callings[i]);
-            
             targetId = map.get(players[currentId - 1]);
             
             map.put(callings[i], targetId);
