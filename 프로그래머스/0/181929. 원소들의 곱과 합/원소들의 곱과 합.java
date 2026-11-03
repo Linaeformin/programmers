@@ -10,6 +10,6 @@ class Solution {
         
         sum_pow = (int) Math.pow(sum_pow, 2);
         
-        return x < sum_pow ? (int)1 : (int)0;
+        return x < sum_pow ? 1 : 0;
     }
 }
