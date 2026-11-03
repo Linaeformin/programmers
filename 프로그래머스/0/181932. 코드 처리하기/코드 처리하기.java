@@ -1,6 +1,5 @@
 class Solution {
     public String solution(String code) {
-        String answer = "";
         String ret = "";
         int mode = 0;
         
