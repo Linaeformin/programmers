@@ -8,14 +8,8 @@ class Solution {
             int arr_min = Integer.MAX_VALUE;
             
             for (int j = queries[i][0]; j <= queries[i][1]; j++){
-                if (arr[j] > queries[i][2]){
-                    if (arr_min == -1) {
-                        arr_min = arr[j];
-                        continue;
-                    }
-                    if (arr[j] < arr_min) {
-                        arr_min = arr[j];
-                    }
+                if (arr[j] > queries[i][2] && arr[j] < arr_min){
+                    arr_min = arr[j];
                 }
             }
             
