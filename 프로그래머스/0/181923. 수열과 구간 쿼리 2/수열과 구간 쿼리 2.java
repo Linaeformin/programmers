@@ -15,7 +15,7 @@ class Solution {
             
             if (arr_min == Integer.MAX_VALUE) arr_min = -1;
             answer[i] = arr_min;
-;        }
+        }
 
         return answer;
     }
