@@ -4,7 +4,8 @@ class Solution {
         
         for (int i = 0; i < queries.length; i++){
             
-            int arr_min = -1;
+            // int arr_min = -1;
+            int arr_min = Integer.MAX_VALUE;
             
             for (int j = queries[i][0]; j <= queries[i][1]; j++){
                 if (arr[j] > queries[i][2]){
@@ -17,6 +18,8 @@ class Solution {
                     }
                 }
             }
+            
+            if (arr_min == Integer.MAX_VALUE) arr_min = -1;
             answer[i] = arr_min;
 ;        }
 
