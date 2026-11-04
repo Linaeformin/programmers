@@ -1,0 +1,25 @@
+class Solution {
+    public int[] solution(int[] arr, int[][] queries) {
+        int[] answer = new int[queries.length];
+        
+        for (int i = 0; i < queries.length; i++){
+            
+            int arr_min = -1;
+            
+            for (int j = queries[i][0]; j <= queries[i][1]; j++){
+                if (arr[j] > queries[i][2]){
+                    if (arr_min == -1) {
+                        arr_min = arr[j];
+                        continue;
+                    }
+                    if (arr[j] < arr_min) {
+                        arr_min = arr[j];
+                    }
+                }
+            }
+            answer[i] = arr_min;
+;        }
+
+        return answer;
+    }
+}
