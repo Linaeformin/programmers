@@ -1,5 +1,5 @@
 class Solution {
-    public StringBuilder solution(int[] numLog) {
+    public String solution(int[] numLog) {
         // String answer = "";
         // for (int i = 1; i < numLog.length; i++){
         //     switch(numLog[i] - numLog[i-1]){
@@ -22,6 +22,6 @@ class Solution {
                 default: break;
             }
         }
-        return answer;
+        return answer.toString();
     }
 }
