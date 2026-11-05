@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 class Solution {
     public int[] solution(int n) {
-        int[] answer = {};
         ArrayList<Integer> list = new ArrayList<>();
         list.add(n);
         
