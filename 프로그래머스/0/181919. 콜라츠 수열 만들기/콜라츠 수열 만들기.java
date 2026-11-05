@@ -5,8 +5,7 @@ class Solution {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(n);
         
-        while (true){
-            if (n == 1) break;
+        while (n != 1){
             if (n % 2 == 0) n /= 2;
             else n = 3 * n + 1;
             list.add(n);
