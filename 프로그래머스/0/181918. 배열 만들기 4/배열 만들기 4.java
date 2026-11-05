@@ -20,11 +20,12 @@ class Solution {
         // 1) stream 사용 3.06/13.22ms, 68.1/88.3MB
         // return list.stream().mapToInt(num -> num).toArray();
         
-        // 2) 반복문 사용
+        // 2) 반복문 사용 2.14/7.67ms, 67/81.5MB <-- 채택
         int[] stk = new int[list.size()];
         for (int j = 0; j < list.size(); j++){
             stk[j] = list.get(j);
         }
+        
         return stk;
     }
 }
