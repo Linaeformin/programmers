@@ -17,8 +17,14 @@ class Solution {
             else list.remove(list.size() - 1);
         }
         
-        // 1) stream 사용
-        return list.stream().mapToInt(num -> num).toArray();
-        // return stk;
+        // 1) stream 사용 3.06/13.22ms, 68.1/88.3MB
+        // return list.stream().mapToInt(num -> num).toArray();
+        
+        // 2) 반복문 사용
+        int[] stk = new int[list.size()];
+        for (int j = 0; j < list.size(); j++){
+            stk[j] = list.get(j);
+        }
+        return stk;
     }
 }
