@@ -20,7 +20,6 @@ class Solution {
             if (c == d) answer = (a + c) * (c - a);
             else answer = c * d;
         }
-        // a와 나머지는 일단 다름
         else if (b == d) answer = (10 * b + a) * (10 * b + a);
         else if (b == c) answer = a * d;
         else if (c == d) answer = a * b;
