@@ -9,7 +9,10 @@ class Solution {
             if (str > k) list.add(str);
         }
         
-        int[] answer = list.stream().mapToInt(n -> n).toArray();
+        int[] answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++){
+            answer[i] = list.get(i);
+        }
         
         return answer;
     }
