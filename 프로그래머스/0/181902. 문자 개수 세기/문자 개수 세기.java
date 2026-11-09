@@ -4,12 +4,9 @@ class Solution {
 
         for (int i = 0; i < my_string.length(); i++){
             int ch = (int) my_string.charAt(i);
-            if (Character.isUpperCase(my_string.charAt(i))) answer[ch - 'A'] += 1;
-
-            else {
-                answer[ch - 'a' + 26] += 1;
-            }
             
+            if (Character.isUpperCase(my_string.charAt(i))) answer[ch - 'A'] += 1;
+            else answer[ch - 'a' + 26] += 1;
         }
 
         return answer;
