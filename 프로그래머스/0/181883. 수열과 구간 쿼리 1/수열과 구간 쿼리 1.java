@@ -7,7 +7,7 @@ class Solution {
             int max = queries[i][1];
             
             for (int j = min; j <= max; j++){
-                answer[j] += 1;
+                answer[j]++;
             }
         }
     
