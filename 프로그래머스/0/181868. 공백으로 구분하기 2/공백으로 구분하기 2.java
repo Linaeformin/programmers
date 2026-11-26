@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.ArrayList;
 
 class Solution {
     public String[] solution(String my_string) {
@@ -9,6 +8,7 @@ class Solution {
             .filter(s -> !s.equals(""))
             .toArray(String[]::new);
         
-        return answer;
+        // return answer;
+        return my_string.trim().split(" +");
     }
 }
