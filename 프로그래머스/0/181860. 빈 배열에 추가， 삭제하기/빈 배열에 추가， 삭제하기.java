@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 class Solution {
     public int[] solution(int[] arr, boolean[] flag) {
-        int[] answer = {};
+
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < arr.length; i++){
             if (flag[i]){
